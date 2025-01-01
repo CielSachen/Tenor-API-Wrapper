@@ -1,0 +1,36 @@
+name: Bug Report
+description: Report a bug with the Tenor API wrapper.
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - CielSachen
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have tried restarting my IDE, and the bug persists.
+          required: true
+        - label: I have installed the correct version of Node.js and the package's dependencies.
+          required: true
+        - label: I have searched for related issues and found none that matched this bug.
+          required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: Provide a clear and concise description of what you expected the behavior to be.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual Behavior
+      description: Provide a clear and concise description of what the actual behavior was.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Give any additional info that can help with solving this bug.
+    validations:
+      required: false

@@ -1,0 +1,57 @@
+{
+  "name": "@cielsachen/tenor-api-wrapper",
+  "version": "1.0.0",
+  "description": "A wrapper for simplifying interactions with Tenor's API (v2).",
+  "keywords": [
+    "api",
+    "gif",
+    "javascript",
+    "nodejs",
+    "tenor",
+    "typescript",
+    "wrapper"
+  ],
+  "homepage": "https://github.com/CielSachen/Tenor-API-Wrapper#readme",
+  "bugs": {
+    "url": "https://github.com/CielSachen/Tenor-API-Wrapper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CielSachen/Tenor-API-Wrapper.git"
+  },
+  "license": "MIT",
+  "author": "CielSachen",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepack": "pnpm run build",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cielsachen/eslint-config": "^1.0.0",
+    "@types/node": "^22.10.3",
+    "eslint": "^9.17.0",
+    "prettier": "3.4.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0"
+  },
+  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
+  "engines": {
+    "node": ">=22.11.0",
+    "pnpm": "^9.15.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

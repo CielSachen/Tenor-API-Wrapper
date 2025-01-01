@@ -1,0 +1,20 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+
+  "files.insertFinalNewline": true,
+
+  "prettier.configPath": "./prettier.config.js",
+  "prettier.printWidth": 120,
+
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifierEnding": "js",
+  "typescript.preferences.quoteStyle": "double",
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+  "[javascript][typescript]": { "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" } }
+}

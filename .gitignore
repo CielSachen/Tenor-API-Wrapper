@@ -1,0 +1,12 @@
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Node.js
+node_modules/
+dist/
+.pnpm-debug.log*
+
+# Miscellaneous
+**/.DS_Store
