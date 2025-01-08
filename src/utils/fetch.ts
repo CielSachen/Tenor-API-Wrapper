@@ -5,10 +5,10 @@ import { createUrlParameters, renameParameters } from "@/utils/parameters.js";
 /**
  * Fetches the response of Tenor's API using the passed URL path and query string.
  *
- * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+ * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
  * content as JSON.
  * @param path The URL path and query string to fetch.
- * @returns An object containing the fetched response’s body.
+ * @returns An object containing the fetched response's body.
  * @throws {GoogleApiError} if the Google API server generates an error.
  * @throws All errors thrown by `fetch()` for the same reasons.
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch | The MDN documentation for `fetch()`} for
@@ -28,11 +28,11 @@ export async function fetchTenorApi<TEndpointResponseBody extends object>(
 /**
  * Fetches the response of the passed Tenor API endpoint with the passed endpoint parameters.
  *
- * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+ * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
  * content as JSON.
  * @param resourceName The resource name of the endpoint to fetch.
  * @param parameters An object containing the parameters of the endpoint to fetch.
- * @returns An object containing the fetched response’s body.
+ * @returns An object containing the fetched response's body.
  * @throws {GoogleApiError} if the Google API server generates an error.
  * @throws All errors thrown by `fetch()` for the same reasons.
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch | The MDN documentation for `fetch()`} for

@@ -18,9 +18,9 @@ export interface GoogleApiErrorPayload {
   readonly details?: readonly GoogleApiErrorDetails[];
 }
 
-/** The JSON body of a Google API’s error response. */
+/** The JSON body of a Google API's error response. */
 export interface GoogleApiErrorResponseBody {
-  /** The error’s actual payload. */
+  /** The error's actual payload. */
   readonly error: GoogleApiErrorPayload;
 }
 
@@ -38,7 +38,7 @@ export class GoogleApiError extends Error implements GoogleApiErrorPayload {
 
   /**
    * Constructs a new Google API error object using the passed payload.
-   * @param payload The error’s payload.
+   * @param payload The error's payload.
    */
   constructor(payload: Readonly<GoogleApiErrorPayload>) {
     super(payload.message);

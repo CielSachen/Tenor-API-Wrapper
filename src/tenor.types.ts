@@ -67,7 +67,7 @@ export interface EndpointParameters<TContentFormat extends ContentFormat = Conte
   id?: string;
   /** The ID of the GIF or the array of IDs of the GIFs to get. */
   ids?: [string, ...string[]];
-  /** The key to access Tenor’s API. */
+  /** The key to access Tenor's API. */
   key?: string;
   /**
    * The maximum number of GIFs, search terms, or autocompletes to get.
@@ -372,7 +372,7 @@ export interface SearchEndpointResponseBody<TContentFormat extends ContentFormat
   readonly results: readonly Gif<TContentFormat>[];
   /**
    * The position ID for getting the next set of GIFs through the
-   * {@link EndpointParameters.positionId `positionId` parameter}. If no additional results exist, the property’s value
+   * {@link EndpointParameters.positionId `positionId` parameter}. If no additional results exist, the property's value
    * will be an empty string.
    */
   readonly next: string;
@@ -389,7 +389,7 @@ export interface FeaturedEndpointResponseBody<TContentFormat extends ContentForm
   readonly results: readonly Gif<TContentFormat>[];
   /**
    * The position ID for getting the next set of featured GIFs through the
-   * {@link EndpointParameters.positionId `positionId` parameter}. If no additional results exist, the property’s value
+   * {@link EndpointParameters.positionId `positionId` parameter}. If no additional results exist, the property's value
    * will be an empty string.
    */
   readonly next: string;

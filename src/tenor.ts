@@ -47,7 +47,7 @@ export class TenorApi {
    * Gets suggestions for the passed search term by fetching Tenor's Search Suggestions API endpoint with the passed
    * parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @param searchTerm The search term to get suggestions for.
    * @param parameters An object containing the endpoint's parameters.
@@ -85,7 +85,7 @@ export class TenorApi {
    * Gets the autocompletes for the passed partial search term by fetching Tenor's Autocomplete API endpoint with the
    * passed parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @param searchTerm The partial search term to get autocompletes for.
    * @param parameters An object containing the endpoint's parameters.
@@ -123,7 +123,7 @@ export class TenorApi {
    * Gets search terms trending on Tenor's {@link https://tenor.com | website} by fetching Tenor's Trending Search Terms
    * API endpoint with the passed parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @param parameters An object containing the endpoint's parameters.
    * @returns An object containing the array of trending search terms and their locale.
@@ -158,7 +158,7 @@ export class TenorApi {
   /**
    * Gets GIFs relevant to the passed search term by fetching Tenor's Search API endpoint with the passed parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @template TContentFormat The content format of the GIFs to get.
    * @param searchTerm The search term to get relevant GIFs from.
@@ -198,7 +198,7 @@ export class TenorApi {
   /**
    * Gets GIFs covered by the passed GIF category by fetching Tenor's Search API endpoint with the passed parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @template TContentFormat The content format of the GIFs to get.
    * @param category The category of the GIFs to get.
@@ -244,7 +244,7 @@ export class TenorApi {
   /**
    * Gets GIFs with the passed IDs by fetching Tenor's Posts API endpoint with the passed parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @template TContentFormat The content format of the GIFs to get.
    * @param ids The array of the IDs of the GIFs to get.
@@ -284,7 +284,7 @@ export class TenorApi {
    * Gets GIFs featured on Tenor's {@link https://tenor.com | website} by fetching Tenor's Featured API endpoint with
    * the passed parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @template TContentFormat The content format of the GIFs to get.
    * @param parameters An object containing the endpoint's parameters.
@@ -323,7 +323,7 @@ export class TenorApi {
   /**
    * Gets GIF categories by fetching Tenor's Categories API endpoint with the passed parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @param parameters An object containing the endpoint's parameters.
    * @returns An object containing the array of GIF categories and their locale.
@@ -358,7 +358,7 @@ export class TenorApi {
    * Registers the share event of a GIF with the passed ID by fetching Tenor's Register Share API endpoint with the
    * passed parameters.
    *
-   * This function uses `fetch()` under the hood. It sends a GET request to Tenor’s API and parses the response body
+   * This function uses `fetch()` under the hood. It sends a GET request to Tenor's API and parses the response body
    * content as JSON.
    * @param id The ID of the GIF to register the share event of.
    * @param parameters An object containing the endpoint's parameters.
