@@ -1,5 +1,5 @@
 import { GoogleApiError, type GoogleApiErrorResponseBody } from "@/errors/google-api-error.js";
-import type { EndpointParameters } from "@/tenor.types.js";
+import type { EndpointParameters, EndpointResponseBody } from "@/tenor.types.js";
 import { createUrlParameters, renameParameters } from "@/utils/parameters.js";
 
 /**
@@ -14,7 +14,7 @@ import { createUrlParameters, renameParameters } from "@/utils/parameters.js";
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch | The MDN documentation for `fetch()`} for
  * more information about the function.
  */
-export async function fetchTenorApi<TEndpointResponseBody extends object>(
+export async function fetchTenorApi<TEndpointResponseBody extends EndpointResponseBody>(
   path: string,
 ): Promise<TEndpointResponseBody> {
   const response = await fetch(new URL(path, "https://tenor.googleapis.com/v2/"));
@@ -38,7 +38,7 @@ export async function fetchTenorApi<TEndpointResponseBody extends object>(
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch | The MDN documentation for `fetch()`} for
  * more information about the function.
  */
-export async function fetchTenorApiEndpoint<TEndpointResponseBody extends object>(
+export async function fetchTenorApiEndpoint<TEndpointResponseBody extends EndpointResponseBody>(
   resourceName:
     | "search"
     | "featured"

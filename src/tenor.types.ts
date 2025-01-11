@@ -441,3 +441,17 @@ export interface PostsEndpointResponseBody<TContentFormat extends ContentFormat 
   /** The array of GIFs. */
   readonly results: readonly Gif<TContentFormat>[];
 }
+
+/**
+ * The JSON body of the response of Tenor's API endpoints.
+ * @template TContentFormat The content format of the GIFs.
+ */
+export type EndpointResponseBody<TContentFormat extends ContentFormat = ContentFormat> =
+  | SearchEndpointResponseBody<TContentFormat>
+  | FeaturedEndpointResponseBody<TContentFormat>
+  | CategoriesEndpointResponseBody
+  | SearchSuggestionsEndpointResponseBody
+  | AutocompleteEndpointResponseBody
+  | TrendingSearchTermsEndpointResponseBody
+  | RegisterShareEndpointResponseBody
+  | PostsEndpointResponseBody<TContentFormat>;
